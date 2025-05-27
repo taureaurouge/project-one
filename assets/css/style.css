@@ -14,6 +14,13 @@ body {
     font-family: 'lato', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 header {
     background-color: rgb(255, 255, 255);
     padding: 0 1rem;
@@ -29,13 +36,6 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-h1 {
-    font-family: 'oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
 #menu {
@@ -77,11 +77,40 @@ nav {
 }
 
 main {
-    background-color: yellow;
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
+/*Hero Section*/
+
+ #hero {
+    height: 600px;t
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repea center center/cover;
+    position: relative;
+ }
+
+
+ 
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: white;
+}
+
+/* Reasons landing page paragraph */
+
+
 
 /*Footer*/
 #social-networks {
@@ -131,6 +160,12 @@ main {
     main {
         /*Push main content down to accommodate larger header*/
         margin-top: 79px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
