@@ -85,9 +85,9 @@ main {
 /*Hero Section*/
 
  #hero {
-    height: 600px;t
+    height: 600px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repea center center/cover;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
  }
 
